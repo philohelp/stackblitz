@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 
+import FormIndex from "./formIndex.js"
+
 import "./style.css";
 
 const App = props => {
@@ -8,7 +10,7 @@ const App = props => {
 
   return (
     <div>
-      Hello
+      <FormIndex />
     </div>
   );
 };
