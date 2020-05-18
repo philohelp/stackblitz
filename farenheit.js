@@ -7,6 +7,8 @@ const tempFahrenheit = atom({
   default: 32,
 });
 
+// La valeur de C est toujours calculée en fonction de F. Quand on fixe F, C se GET tout seul. Quand on fixe C, on SET F et C se get tout seul.
+
 const tempCelcius = selector({
   key: 'tempCelcius',
   get: ({get}) => ((get(tempFahrenheit) - 32) * 5) / 9,
